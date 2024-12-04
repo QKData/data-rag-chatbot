@@ -21,7 +21,7 @@ from langchain_core.documents import Document
 
 
 nest_asyncio.apply()
-os.environ["LLAMA_CLOUD_API_KEY"] = "llx-f0AvF3RwQTocM3EI12ynRI3C6D9z7gBE9DdQ3qYm9EeRQt5K"
+os.environ["LLAMA_CLOUD_API_KEY"] = ""
 
 # Parse PDF file
 def parse_pdf_file(pdf_file):
@@ -70,8 +70,8 @@ if 'initialized' not in st.session_state:
 
 if not st.session_state.initialized:
     # OpenAI API key and Pinecone API key
-    st.session_state.openai_api_key = "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"
-    st.session_state.pinecone_api_key = "e1008d9c-04e5-4342-b0ea-77e424a6d323"
+    st.session_state.openai_api_key = ""
+    st.session_state.pinecone_api_key = ""
 
     os.environ['OPENAI_API_KEY'] = st.session_state.openai_api_key
     os.environ['PINECONE_API_KEY'] = st.session_state.pinecone_api_key
